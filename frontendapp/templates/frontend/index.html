@@ -1,13 +1,13 @@
+{% load render_bundle from webpack_loader %}
 <!DOCTYPE html>
 <html>
+
     <head>
         <meta charset="UTF-8">
         <title>django-rest-react-redux</title>
     </head>
     <body>
     <div id="react-app"></div>
+    {% render_bundle 'main' %}
     </body>
-
-{% load static %}
-<script src="{% static "frontend/main.js" %}"></script>
 </html>

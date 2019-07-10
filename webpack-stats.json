@@ -1,1 +1,1 @@
-{"status":"done","chunks":{"main":[{"name":"main.js","path":"/home/pratik/djangoenv/djangoUsers/frontendapp/static/frontend/main.js"}]}}
+{"status":"done","error":"ModuleNotFoundError","message":"Module not found: Error: Can't resolve 'react-bootstrap/lib/Button' in '/home/pratik/djangoenv/djangoUsers/frontendapp/src/components'","chunks":{"main":[{"name":"main.js","path":"/home/pratik/djangoenv/djangoUsers/frontendapp/static/frontend/main.js"}]}}

@@ -19,6 +19,8 @@ from django.contrib import admin
 from django.urls import path
 from users_app import views as users_views
 from frontendapp import urls as frontend_urls
+from rest_framework.authtoken import views as rest_views
+
 
 router = routers.DefaultRouter()
 router.register(r'users', users_views.UserViewSet)
@@ -27,4 +29,5 @@ urlpatterns = [
     path('api/', include(router.urls)),
     path('admin/', admin.site.urls),
     path('', include(frontend_urls)),
+    path('api/login/', rest_views.obtain_auth_token),
 ]
